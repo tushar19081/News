@@ -1,10 +1,13 @@
 import React from 'react'
-import Rhombus from './Rhombus.gif'
+import loading from './loading.gif'
 
 function Spinner() {
     return (
-        <div>
-            <img src={Rhombus} alt="" width = "33px" height= "40px"/>
+        <div style={{
+            display: "flex",
+            justifyContent: "center"
+            }}>
+            <img src={loading} alt="" width = "40px" height= "40px"/>
         </div>
     )
 }

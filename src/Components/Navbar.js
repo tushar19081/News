@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 export default function Navbar() {
 
@@ -8,17 +9,21 @@ export default function Navbar() {
                     <div className="nav-wrapper">
                     <div className="grad-bar"></div>
                     <nav className="navbar">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWmiIzr_AAVeHUmc7JHYWzv2TqEU8GWL6JQ&usqp=CAU" alt="/"/>
+                        <img src="news-logo.svg" alt="/" width="75px" height="46px"/>
                         <div className="menu-toggle" id="mobile-menu">
                         <span className="bar"></span>
                         <span className="bar"></span>
                         <span className="bar"></span>
                         </div>
                         <ul className="nav no-search">
-                        <li className="nav-item"><a href="/">Home</a></li>
-                        <li className="nav-item"><a href="/about">About</a></li>
-                        <li className="nav-item"><a href="/service">Service</a></li>
-                        <li className="nav-item"><a href="/contact">Contact Us</a></li>
+                        <li className="nav-item"><Link to="/">Home</Link></li>
+                        <li className="nav-item"><Link to="/business">Business</Link></li>
+                        <li className="nav-item"><Link to="/entertainment">Entertainment</Link></li>
+                        <li className="nav-item"><Link to="/general">General</Link></li>
+                        <li className="nav-item"><Link to="/health">Health</Link></li>
+                        <li className="nav-item"><Link to="/science">Science</Link></li>
+                        <li className="nav-item"><Link to="/sports">Sports</Link></li>
+                        <li className="nav-item"><Link to="/technology">Technology</Link></li>
                         </ul>
                 </nav>
                 </div>
