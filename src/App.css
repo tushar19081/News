@@ -12,14 +12,13 @@
     width: 100%;
     height: auto;
     background-color: #b8c6db;
-    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);    
+    position: fixed;
+    z-index: 10000;
   }
   
   .nav-wrapper {
     width: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
   }
   
   /* .grad-bar {
@@ -40,6 +39,7 @@
     align-items: center;
     height: 50px;
     overflow: hidden;
+    position: relative;
   }
   
   .navbar img {
@@ -47,6 +47,7 @@
     width: 40px;
     justify-self: start;
     margin-left: 20px;
+    position: relative;
   }
   
   .navbar ul {
@@ -54,6 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: relative;
     
   }
   
@@ -64,6 +66,7 @@
     padding: 0px 16px;
     text-decoration: none;
     transition: color 0.3s ease-out;
+    position: relative;
   }
   
   .nav-item a:hover {
